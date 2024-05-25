@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         {/* Imagem à esquerda */}
         <div className="flex items-center">
-          <Image src="/logo.png" alt="Logo" width={50} height={50} />
+          <Image src="/myFace.jpeg" alt="Logo" width={50} height={50} />
         </div>
         {/* Menu hamburguer */}
         <div className="lg:hidden flex items-center">
