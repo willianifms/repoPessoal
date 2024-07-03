@@ -30,7 +30,7 @@ const Animation = () => {
         <motion.h1 className="text-6xl text-gray-800 font-semibold" style={{ marginBottom: '50px' }}>
           My name is Willian
         </motion.h1>
-        <motion.h2 className="text-3xl text-gray-600" style={{ marginBottom: '55px' }}>
+        <motion.h2 className="text-3xl text-gray-600" style={{ marginBottom: '155px' }}>
           Front End Developer
         </motion.h2>
       </motion.div>
