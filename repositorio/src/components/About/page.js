@@ -16,10 +16,10 @@ const About = () => {
         <div className="lg:w-1/2 mb-4 md:mb-0">
           <div>
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-            Hi, I'm Willian! I work as a front-end developer and one of
+            Hi, Im Willian! I work as a front-end developer and one of
               the most challenging projects I have ever worked on was the
               development of an MVP of an app. I like to be up to date and be
-              informed of the latest trends in the field so I'm very active on
+              informed of the latest trends in the field so Im very active on
               the dedicated communities on WhatsApp, Discord, and LinkedIn. I
               also keep an eye on technology news in Webnoticiários.  Along with my skills in HTML, CSS, JavaScript, and
               React, I even have some understanding of Python and Linux. Apart

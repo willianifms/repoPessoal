@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="container mx-auto flex flex-wrap items-center justify-between text-white">
         
                 <div className="flex items-center">
-                    <p> 2024 
-                    It's the time </p>
+                    <p>&copy; 2024 
+                    Its the time </p>
                 </div>
       
 
