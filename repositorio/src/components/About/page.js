@@ -12,7 +12,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="lg:w-1/2 lg:pl-8 lg:flex lg:justify-center lg:items-center">
+      <div className="lg:w-1/2 lg:pl-20 lg:flex lg:justify-center lg:items-center">
         <div className="relative w-500 h-500 flex items-center justify-center">
           <Image
             src="/myFace.jpeg"
