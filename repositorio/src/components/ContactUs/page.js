@@ -6,6 +6,7 @@ export default function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false); // Estado de carregamento
 
   function sendEmail(e) {
     e.preventDefault();
@@ -13,17 +14,21 @@ export default function ContactUs() {
       alert("Preencha os campos corretamente");
       return;
     }
+
+    setIsLoading(true); // Ativar carregamento
+
     const templateParams = {
       from_name: name,
       message: message,
       email: email,
     };
+
     emailjs
       .send(
         "service_4rhm7kk",
         "template_wc2kdg8",
         templateParams,
-        "f9hJzuLPx4NaEFoCG"
+        "6n3a4hqovdjs1_p42"
       )
       .then(
         (response) => {
@@ -32,16 +37,18 @@ export default function ContactUs() {
           setName("");
           setEmail("");
           setMessage("");
+          setIsLoading(false); 
         },
         (err) => {
           console.log("erro", err);
+          setIsLoading(false); 
         }
       );
   }
 
   return (
-    <div className="container mx-auto max-w-xl p-4">
-      <h1 className="text-3xl font-bold text-center mb-4">Contact</h1>
+    <div className="container mx-auto max-w-xl p-4" id="contact">
+      <h1 className="text-4xl font-semibold text-gray-800 text-center mb-8">Contact</h1>
 
       <form className="flex flex-col space-y-4" onSubmit={sendEmail}>
         <input
@@ -54,7 +61,7 @@ export default function ContactUs() {
 
         <input
           className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
-          type="text"
+          type="email"
           placeholder="Digite seu email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
@@ -67,14 +74,14 @@ export default function ContactUs() {
           value={message}
         />
 
-        <input
-          className="bg-gray-800 hover:bg-gray-500 text-white py-2 px-4 rounded-md cursor-pointer"
+        <button
+          className={`bg-gray-800 hover:bg-gray-500 text-white py-2 px-4 rounded-md cursor-pointer ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
           type="submit"
-          value="Enviar"
-        />
+          disabled={isLoading}
+        >
+          {isLoading ? "Enviando..." : "Enviar"}
+        </button>
       </form>
     </div>
   );
 }
-
-

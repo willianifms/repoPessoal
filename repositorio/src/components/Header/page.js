@@ -13,7 +13,7 @@ const Header = () => {
     };
     return(
 <>
-    <header>
+    <header id="home">
     
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -31,17 +31,22 @@ const Header = () => {
         <div className={`lg:flex lg:items-center lg:w-auto w-full ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="lg:flex lg:space-x-8 lg:space-y-0 space-y-4 lg:flex-row flex flex-col items-center pt-4 lg:pt-0">
             <li>
-              <Link href="/">
+              <Link href="#home">
                 <p className="text-white hover:text-gray-400 cursor-pointer">Home</p>
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="#about">
                 <p className="text-white hover:text-gray-400 cursor-pointer">About</p>
               </Link>
             </li>
             <li>
-              <Link href="/contact">
+              <Link href="#skills">
+                <p className="text-white hover:text-gray-400 cursor-pointer">Skills</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact">
                 <p className="text-white hover:text-gray-400 cursor-pointer">Contact</p>
               </Link>
             </li>

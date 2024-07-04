@@ -12,7 +12,7 @@ const Skills = () => {
   const iconStyle = "text-3xl sm:text-4xl"; // Estilo para os ícones
 
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-10" id="skills">
       <h1 className="text-4xl font-semibold text-gray-800 text-center mb-8">My Skills</h1>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         <li className="flex flex-col items-center space-y-2"><FaHtml5 className={iconStyle + " text-orange-500"} /><span>HTML</span></li>
