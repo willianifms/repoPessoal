@@ -27,7 +27,7 @@ const Animation = () => {
       </motion.div>
 
       <motion.div variants={textVariants} initial="hidden" animate="visible" className="w-full">
-        <motion.h1 className="text-6xl text-gray-800 font-semibold" style={{ marginBottom: '50px' }}>
+        <motion.h1 className="text-6xl text-gray-800 font-semibold" style={{ marginBottom: '40px' }}>
           My name is Willian
         </motion.h1>
         <motion.h2 className="text-3xl text-gray-600" style={{ marginBottom: '155px' }}>

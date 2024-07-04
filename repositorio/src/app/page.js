@@ -1,6 +1,7 @@
 import Header from "@/components/Header/page";
 import Animation from "@/components/Animation/page";
 import About from "@/components/About/page";
+import Skills from "@/components/Skills/page";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
 <Header/>
 <Animation/>
 <About/>
-
+<Skills/>
 </>
   );
 }
