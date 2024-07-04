@@ -11,7 +11,7 @@ const About = () => {
       </h1>
       <div
         className="container mx-auto py-8 px-4 md:px-8 lg:flex lg:items-center"
-        id="about"
+
       >
         <div className="lg:w-1/2 mb-4 md:mb-0">
           <div>
