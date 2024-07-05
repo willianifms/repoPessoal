@@ -18,6 +18,7 @@ export default function ContactUs() {
     }
 
     const notify = () => toast.success("Email enviado com sucesso");
+    const erro = () => toast.error("Falha ao enviar o email");
 
 
 
@@ -46,7 +47,7 @@ export default function ContactUs() {
           setIsLoading(false); 
         },
         (err) => {
-          console.log("erro", err);
+          erro(err)
           setIsLoading(false); 
         }
       );
