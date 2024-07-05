@@ -32,8 +32,9 @@ const Skills = () => {
         <li className="flex flex-col items-center space-y-2"><SiPostman className={iconStyle + " text-orange-400"} /><span>Postman</span></li>
         <li className="flex flex-col items-center space-y-2"><FaNode className={iconStyle + " text-green-500"} /><span>Node.js</span></li>
         <li className="flex flex-col items-center space-y-2"><FaGithub className={iconStyle + " text-gray-800"} /><span>Git/Github</span></li>
-        <li className="flex flex-col items-center space-y-2"><GrCloudComputer className={iconStyle + " text-gray-700"} /><span>API Restfull</span></li>
-        <li className="flex flex-col items-center space-y-2"><LuMonitorSmartphone className={iconStyle + " text-black-700"} /><span>Desenvolvimento Responsivo</span></li>
+        <li className="flex flex-col items-center space-y-2"><GrCloudComputer className={iconStyle + " text-gray-700"} /><span>API RESTful</span></li>
+        <li className="flex flex-col items-center space-y-2"><LuMonitorSmartphone className={iconStyle + " text-black-700"} /><span>
+        responsive development</span></li>
         <li className="flex flex-col items-center space-y-2"><SiPwa className={iconStyle + " text-purple-700"} /><span>PWA</span></li>
       </ul>
     </div>
