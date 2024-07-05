@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react-google-recaptcha": "^2.1.0",
     "@emailjs/browser": "^4.3.3",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
@@ -20,7 +19,9 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.2.1"
+    "react-google-recaptcha": "^2.1.0",
+    "react-icons": "^5.2.1",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "eslint": "^8",

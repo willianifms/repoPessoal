@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactUs() {
   const [name, setName] = useState("");
@@ -14,6 +16,10 @@ export default function ContactUs() {
       alert("Preencha os campos corretamente");
       return;
     }
+
+    const notify = () => toast.success("Email enviado com sucesso");
+
+
 
     setIsLoading(true); // Ativar carregamento
 
@@ -32,8 +38,8 @@ export default function ContactUs() {
       )
       .then(
         (response) => {
-          console.log("EMAIL ENVIADO", response.status, response.text);
-          alert("Mensagem enviada com sucesso");
+          //console.log("EMAIL ENVIADO", response.status, response.text);
+          notify()
           setName("");
           setEmail("");
           setMessage("");
@@ -49,7 +55,7 @@ export default function ContactUs() {
   return (
     <div className="container mx-auto max-w-xl p-4" id="contact">
       <h1 className="text-4xl font-semibold text-gray-800 text-center mb-8">Contact</h1>
-
+      <ToastContainer />
       <form className="flex flex-col space-y-4" onSubmit={sendEmail}>
         <input
           className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none"
