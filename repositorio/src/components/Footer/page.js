@@ -14,13 +14,13 @@ const Footer = () => {
 
                 
                 <div className="flex items-center space-x-4 mt-4 lg:mt-0">
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                    <a href="https://www.instagram.com/willian_apenas/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                         <FaInstagram size={24} />
                     </a>
-                    <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                    <a href="https://github.com/willianifms" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                         <FaGithub size={24} />
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                    <a href="https://www.linkedin.com/in/willian-cardoso-40a308253/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                         <FaLinkedin size={24} />
                     </a>
                 </div>
