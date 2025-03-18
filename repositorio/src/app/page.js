@@ -6,7 +6,7 @@ import About from "@/components/About/page";
 import Skills from "@/components/Skills/page";
 import ContactUs from "@/components/ContactUs/page";
 import Footer from "@/components/Footer/page";
-import CardProject from "@/components/CardProject/page";
+// import CardProject from "@/components/CardProject/page";
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
 <Animation/>
 <About/>
 <Skills/>
-<CardProject/>
+{/* <CardProject/> */}
 <ContactUs/>
 <Footer/>
 </>
